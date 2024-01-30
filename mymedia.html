@@ -57,6 +57,20 @@
             </tr>
         </table>
 
+        <hr>
+        <h3>Code Snippet</h3>
+
+        <p>This code snippet converts the given array elements into li tags and appends them to the list of the given id.</p>
+        <pre>
+            const arrayToHTMLList = (arr, listID) =>
+                document.querySelector(`#${listID}`).innerHTML += arr
+                    .map(item => `
+                ${item}
+            `)
+                .join('');
+        </pre>
+        <a href="https://code.pieces.app/collections/javascript">Link to snippet</a>
+
 
     </body>
 </html>
